@@ -1,9 +1,14 @@
 body {
   /* background-color: #c6dcce; */
-  background: linear-gradient(#c6dcce, #768e6d);
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  color: rgb(43, 55, 48);
+  /* background: linear-gradient(#c6dcce, #768e6d); */
+  /* background: linear-gradient(#efeeb2, #edb766); */
+  background: linear-gradient(#e0dbff, #ad7bfd, #201851);
+  /* background: linear-gradient(#e4d275, #f29f05); */
+  /* background: linear-gradient(#a8f0b3, #26885b); */
+  /* font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif; */
+  font-family: monospace, sans-serif;
+  color: rgb(0, 0, 0);
   line-height: 1.5;
 }
 
@@ -36,18 +41,19 @@ h2 {
   object-fit: cover;
   object-position: 90% 10%;
   border-radius: 50%;
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
 }
 hr {
   margin: 100px 0px;
+  border: 1px dotted black;
 }
 .card {
   height: 100%;
   width: 30%;
   padding-bottom: 20px;
   border-radius: 1rem;
-  box-shadow: 1px 5px 5px rgb(66, 78, 68);
-  background: linear-gradient(#fcfcfc, #e2ecde);
+  box-shadow: 1px 5px 5px rgb(29, 17, 47);
+  background-color: #e0dbff;
   text-align: center;
 }
 .card img {
@@ -58,7 +64,14 @@ hr {
 }
 
 .card:hover {
-  box-shadow: 10px 15px 5px rgb(66, 78, 68);
+  box-shadow: 10px 15px 5px rgb(20, 2, 65);
   transition: 0.3s ease-in-out;
   transform: scale(1.05);
 }
+
+footer {
+  color: white;
+}
+
+/* Media queries: text align left and widt 100% for portrait and h2  font size 1.2rem or something.
+Flex wrap or card 100% width so only 1 card appears at a time on smaller devices */
