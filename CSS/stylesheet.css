@@ -57,7 +57,7 @@ hr {
   text-align: center;
 }
 .card img {
-  height: 80%;
+  height: 600px;
   width: 100%;
   object-fit: cover;
   border-radius: 1rem 1rem 0 0;
@@ -71,6 +71,9 @@ hr {
 
 footer {
   color: white;
+  display: flex;
+  justify-content: center;
+  padding: 100px 0px;
 }
 
 /* Media queries: text align left and widt 100% for portrait and h2  font size 1.2rem or something.
