@@ -1,20 +1,23 @@
 body {
-  /* background-color: #c6dcce; */
-  /* background: linear-gradient(#c6dcce, #768e6d); */
-  /* background: linear-gradient(#efeeb2, #edb766); */
-  background: linear-gradient(#e0dbff, #ad7bfd, #201851);
+  /* light green background-color: #c6dcce; */
+  /* green background: linear-gradient(#c6dcce, #768e6d); */
+  background: linear-gradient(#efdfb2, #edb766);
+  /* purple background: linear-gradient(#e0dbff, #ad7bfd, #201851); */
   /* background: linear-gradient(#e4d275, #f29f05); */
   /* background: linear-gradient(#a8f0b3, #26885b); */
   /* font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif; */
   font-family: monospace, sans-serif;
-  color: rgb(0, 0, 0);
-  line-height: 1.5;
+  color: rgb(33, 23, 0);
+  line-height: 1.6;
 }
 
 a {
   color: black;
   text-decoration: none;
+}
+p {
+  margin: 0.5rem 1rem;
 }
 .card-container,
 .hero {
@@ -22,18 +25,22 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: left;
   gap: 1rem;
+  padding: 1rem;
 }
-
+.card-container h3 {
+  text-align: center;
+}
 h1 {
   text-transform: uppercase;
   width: 100%;
   font-size: 4rem;
+  text-align: center;
 }
 h2 {
   width: 60%;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
 }
 .portrait {
   height: 250px;
@@ -41,30 +48,31 @@ h2 {
   object-fit: cover;
   object-position: 90% 10%;
   border-radius: 50%;
+  margin: 0 3rem;
   /* filter: grayscale(100%); */
 }
 hr {
-  margin: 100px 0px;
-  border: 1px dotted black;
+  margin: 40px 0px;
+  border: 1px solid rgb(111, 70, 5);
 }
 .card {
-  height: 100%;
+  height: 600px;
   width: 30%;
   padding-bottom: 20px;
   border-radius: 1rem;
   box-shadow: 1px 5px 5px rgb(29, 17, 47);
-  background-color: #e0dbff;
+  background-color: #f8e9c0;
   text-align: center;
 }
 .card img {
-  height: 600px;
+  height: 70%;
   width: 100%;
   object-fit: cover;
   border-radius: 1rem 1rem 0 0;
 }
 
 .card:hover {
-  box-shadow: 10px 15px 5px rgb(20, 2, 65);
+  box-shadow: 10px 15px 5px rgb(113, 72, 0);
   transition: 0.3s ease-in-out;
   transform: scale(1.05);
 }
@@ -78,3 +86,28 @@ footer {
 
 /* Media queries: text align left and widt 100% for portrait and h2  font size 1.2rem or something.
 Flex wrap or card 100% width so only 1 card appears at a time on smaller devices */
+@media (width <= 60em) {
+  .card-container,
+  .hero,
+  .card {
+    width: 100%;
+    max-width: 90vw;
+    margin: auto;
+  }
+
+  .card img {
+    max-height: 80vh;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    padding: 2rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+    text-align: left;
+    width: 100%;
+    max-width: 80vw;
+  }
+}
