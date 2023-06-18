@@ -1,22 +1,23 @@
 body {
   /* light green background-color: #c6dcce; */
-  /* green background: linear-gradient(#c6dcce, #768e6d); */
+  background: linear-gradient(#c6dcce, #809877);
   /* purple background: linear-gradient(#e0dbff, #ad7bfd, #201851); */
   /* background: linear-gradient(#e4d275, #f29f05); */
   /* background: linear-gradient(#a8f0b3, #26885b); */
-  background: linear-gradient(#efdfb2, #edb766);
+  /* background: linear-gradient(#efdfb2, #edb766); */
   font-family: monospace, sans-serif;
-  color: rgb(33, 23, 0);
+  color: #211700;
   line-height: 1.6;
   padding: 0;
   margin: 0;
 }
-
 a {
   color: black;
   text-decoration: none;
+}
+main a {
   font-weight: 900;
-  background-color: #edb766;
+  background-color: #fbfffc;
   padding: 0.8rem 2rem;
   border-radius: 0.5rem;
   box-shadow: 1px 4px 4px rgb(29, 17, 47);
@@ -69,7 +70,7 @@ h3 {
 }
 hr {
   margin: 40px 0px;
-  border: 1px solid rgb(111, 70, 5);
+  border: 1px solid rgb(26, 57, 30);
 }
 
 .card {
@@ -77,8 +78,8 @@ hr {
   width: 30%;
   padding-bottom: 40px;
   border-radius: 1rem;
-  box-shadow: 1px 3px 3px rgb(113, 72, 0);
-  background-color: #feebc4;
+  box-shadow: 1px 3px 3px rgb(10, 48, 7);
+  background-color: #c6dcce;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -87,7 +88,7 @@ hr {
 }
 
 .card img {
-  height: 100%;
+  height: 300px;
   width: 100%;
   border-radius: 1rem 1rem 0 0;
   object-fit: cover;
@@ -95,9 +96,12 @@ hr {
   /* margin: 0px 0px 30px; */
 }
 
-a:hover {
+main a:hover {
   box-shadow: 5px 8px 8px rgb(28, 20, 7);
-  background-color: #f7722a;
+  background-color: #7bc38d;
+}
+.contact a:hover {
+  text-decoration: underline;
 }
 
 footer {
@@ -105,9 +109,22 @@ footer {
   justify-content: center;
   padding: 100px 0px;
 }
+.fa-js {
+  background-color: rgb(0, 0, 0);
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact p {
+  font-size: 1.2rem;
+}
+h4 {
+  font-size: 2.5rem;
+}
 
-/* Media queries: text align left and widt 100% for portrait and h2  font size 1.2rem or something.
-Flex wrap or card 100% width so only 1 card appears at a time on smaller devices */
 @media (width <= 60em) {
   .card-container,
   .hero,
